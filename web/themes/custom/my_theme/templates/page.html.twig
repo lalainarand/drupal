@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <head-placeholder token="{{ placeholder_token }}">
+  <title>{{ head_title|safe_join(' | ') }}</title>
+  {{ drupal_head() }}
+  {{ drupal_stylesheets() }}
+  {{ attach_library('my_theme/global-styling') }}
+</head>
+<body>
+  <div class="page">
+    <header>
+      {{ page.header }}
+    </header>
+    <main>
+      {{ page.content }}
+    </main>
+    <footer>
+      {{ page.footer }}
+    </footer>
+  </div>
+  {{ drupal_footerscripts() }}
+</body>
+</html>

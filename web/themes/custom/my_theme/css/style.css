@@ -1,0 +1,75 @@
+body {
+  background-color: rgb(35,53,75);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: rgb(35,53,75);
+}
+.header img {
+  height: 50px;
+}
+.header .nav-link {
+  color: #ffffff;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+.header .nav-link.active {
+  color: #FFC400;
+  text-decoration: underline; 
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 2rem;
+}
+.hero .content {
+  max-width: 50%;
+}
+.hero h1 {
+  font-size: 3rem;
+  color: #FFC400;
+}
+.hero p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+      .hero .form-control {
+  border-radius: 50px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.hero .btn {
+  background-color: #FFC400;
+  color: #2B3442;
+  border-radius: 50px;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+}
+.hero .image {
+  position: relative;
+}
+.hero .image img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+.hero .image::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  background-color: #FFC400;
+  border-radius: 50%;
+  z-index: -1;
+}
